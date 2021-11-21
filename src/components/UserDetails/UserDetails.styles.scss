@@ -28,6 +28,11 @@
     justify-content: center;
     align-items: center;
     margin-bottom: 14px;
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.1);
+      transition: all 0.2s ease-in;
+    }
   }
   .user-name {
     color: #002244;

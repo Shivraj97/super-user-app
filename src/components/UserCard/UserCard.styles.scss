@@ -36,6 +36,8 @@
     align-items: center;
     width: 100%;
     overflow: hidden;
+    overflow-wrap: anywhere;
+    padding: 10px;
     .user-name {
       display: flex;
       flex-wrap: wrap;

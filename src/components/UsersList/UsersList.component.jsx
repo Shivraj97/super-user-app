@@ -16,7 +16,7 @@ function UsersList() {
   }, [])
 
   if (loading) {
-    return <p>{loading && <Spinner />}</p>
+    return <div>{loading && <Spinner />}</div>
   }
   return (
     <div className="user-list-container">
