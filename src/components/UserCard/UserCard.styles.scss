@@ -12,8 +12,11 @@
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   overflow: hidden;
   text-align: center;
+  overflow-wrap: break-all;
   &:hover {
     cursor: pointer;
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in;
   }
   .user-img {
     border-radius: 50%;
@@ -24,11 +27,6 @@
     justify-content: center;
     align-items: center;
     margin-bottom: 14px;
-    &:hover {
-      cursor: pointer;
-      transform: scale(1.2);
-      transition: transform 0.3s;
-    }
   }
   .user-info {
     display: flex;
