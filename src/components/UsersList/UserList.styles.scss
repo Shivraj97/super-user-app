@@ -1,3 +1,25 @@
+.search-user {
+  width: 25%;
+  margin: 20px auto;
+  min-width: 900px;
+  input {
+    outline: none;
+    border: none;
+    color: #00ccff;
+    font-weight: 600;
+    width: 100%;
+    padding: 18px 40px;
+    margin: 10px;
+    border-radius: 50px;
+    font-size: 16px;
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset,
+      rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+    &::placeholder {
+      font-size: 16px;
+      color: #00ccff;
+    }
+  }
+}
 .user-list-container {
   display: flex;
   flex-direction: row;
