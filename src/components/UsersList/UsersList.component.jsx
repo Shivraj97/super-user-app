@@ -14,9 +14,11 @@ function UsersList() {
     dispatch(loadUsers())
   }, [])
 
+  if (loading) {
+    return <p>{loading && <h2>Loading...</h2>}</p>
+  }
   return (
     <div className="user-list-container">
-      {loading && <h2>Loading...</h2>}
       {error && !loading && <h2>{error}</h2>}
       {users && users.map((user, i) => <UserCard key={i} {...user} />)}
     </div>
