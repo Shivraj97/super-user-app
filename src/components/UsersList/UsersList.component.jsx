@@ -2,11 +2,12 @@ import { useEffect } from "react"
 import { loadUsers } from "../../actions/index"
 import { useSelector, useDispatch } from "react-redux"
 import UserCard from "../UserCard/UserCard.component"
+import Spinner from "../Spinner/Spinner.component"
 import "./UserList.styles.scss"
 
 function UsersList() {
   const dispatch = useDispatch()
-  const users = useSelector((state) => state.users.users.results)
+  const users = useSelector((state) => state.users.users)
   const loading = useSelector((state) => state.users.loading)
   const error = useSelector((state) => state.users.error)
 
@@ -15,7 +16,7 @@ function UsersList() {
   }, [])
 
   if (loading) {
-    return <p>{loading && <h2>Loading...</h2>}</p>
+    return <p>{loading && <Spinner />}</p>
   }
   return (
     <div className="user-list-container">

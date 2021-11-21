@@ -6,7 +6,7 @@ import fetchGetUsers from "../requests/fetchUsers"
 function* handleGetUsers() {
   try {
     const users = yield call(fetchGetUsers)
-    yield put(getUsers(users))
+    yield put(getUsers(users.results))
   } catch (err) {
     yield put(setError(err.message))
   }

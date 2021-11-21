@@ -11,6 +11,7 @@
   border-radius: 8px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   overflow: hidden;
+  text-align: center;
   &:hover {
     cursor: pointer;
   }
@@ -48,6 +49,9 @@
       flex-wrap: wrap;
       margin-bottom: 6px;
       color: #a3c1ad;
+      &:hover {
+        color: #00ccff;
+      }
     }
   }
 }
