@@ -3,6 +3,7 @@ import { loadUsers } from "../../actions/index"
 import { useSelector, useDispatch } from "react-redux"
 import UserCard from "../UserCard/UserCard.component"
 import Spinner from "../Spinner/Spinner.component"
+import { ReactComponent as SearchIcon } from "../../assets/search.svg"
 import "./UserList.styles.scss"
 
 function UsersList() {
@@ -36,6 +37,7 @@ function UsersList() {
           placeholder="Search user..."
           onChange={(e) => setSearchTerm(e.target.value)}
         />
+        <SearchIcon className="search-icon" width="30px" height="30px" />
       </div>
       <div className="user-list-container">
         {error && !loading && <h2>{error}</h2>}
