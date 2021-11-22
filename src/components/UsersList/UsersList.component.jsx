@@ -34,7 +34,7 @@ function UsersList() {
     <div className="homepage-container">
       <div className="search-user">
         <input
-          placeholder="Search user..."
+          placeholder="Enter first name to search..."
           onChange={(e) => setSearchTerm(e.target.value)}
         />
         <SearchIcon className="search-icon" width="30px" height="30px" />

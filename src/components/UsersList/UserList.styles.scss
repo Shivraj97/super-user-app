@@ -2,14 +2,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 50%;
   margin: 20px auto;
   input {
+    position: relative;
     outline: none;
     border: none;
     color: #00ccff;
     font-weight: 600;
-    width: 100%;
+    width: 32rem;
     padding: 18px 40px;
     margin: 10px;
     border-radius: 50px;
@@ -20,20 +20,23 @@
       font-size: 16px;
       color: #00ccff;
     }
+    @media screen and (max-width: 580px) {
+      width: 16rem;
+    }
   }
   .search-icon {
     position: absolute;
-    left: 70%;
+    left: 65%;
     margin-right: 10px;
     &:hover {
       cursor: pointer;
     }
-  }
-  @media screen and (max-width: 580px) {
-    width: 75%;
-  }
-  @media screen and (max-width: 980px) {
-    width: 60%;
+    @media screen and (max-width: 480px) {
+      left: 70%;
+    }
+    @media screen and (max-width: 980px) {
+      left: 75%;
+    }
   }
 }
 .user-list-container {
