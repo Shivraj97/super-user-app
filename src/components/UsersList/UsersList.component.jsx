@@ -30,7 +30,7 @@ function UsersList() {
   }
 
   return (
-    <>
+    <div className="homepage-container">
       <div className="search-user">
         <input
           placeholder="Search user..."
@@ -41,7 +41,7 @@ function UsersList() {
         {error && !loading && <h2>{error}</h2>}
         {users && users.map((user, i) => <UserCard key={i} {...user} />)}
       </div>
-    </>
+    </div>
   )
 }
 
